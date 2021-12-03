@@ -6,6 +6,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Dive1", "Dive1\Dive1.fsproj
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Dive2", "Dive2\Dive2.fsproj", "{3B9EBB56-DA5F-4DFF-9279-83D04BE1D5BD}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BinaryDiagnostic1", "BinaryDiagnostic1\BinaryDiagnostic1.fsproj", "{3DE4D4DA-C64C-4A71-9DAF-7AF2D5FF2BB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{3B9EBB56-DA5F-4DFF-9279-83D04BE1D5BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B9EBB56-DA5F-4DFF-9279-83D04BE1D5BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B9EBB56-DA5F-4DFF-9279-83D04BE1D5BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE4D4DA-C64C-4A71-9DAF-7AF2D5FF2BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE4D4DA-C64C-4A71-9DAF-7AF2D5FF2BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE4D4DA-C64C-4A71-9DAF-7AF2D5FF2BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE4D4DA-C64C-4A71-9DAF-7AF2D5FF2BB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
