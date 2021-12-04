@@ -12,6 +12,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BinaryDiagnostic2", "Binary
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bingo1", "Bingo1\Bingo1.fsproj", "{60DD0A5B-D012-4066-997A-9AB02C64EC57}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bingo2", "Bingo2\Bingo2.fsproj", "{3B820D1B-9D66-487B-B918-0D0899063010}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{60DD0A5B-D012-4066-997A-9AB02C64EC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60DD0A5B-D012-4066-997A-9AB02C64EC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60DD0A5B-D012-4066-997A-9AB02C64EC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B820D1B-9D66-487B-B918-0D0899063010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B820D1B-9D66-487B-B918-0D0899063010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B820D1B-9D66-487B-B918-0D0899063010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B820D1B-9D66-487B-B918-0D0899063010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
