@@ -11,6 +11,11 @@
     <ItemGroup>
         <Compile Include="OptionBuilder.fs"/>
         <Compile Include="ResultBuilder.fs"/>
+        <Compile Include="OptionUtil.fs"/>
+        <Compile Include="ConsoleUtil.fs"/>
+        <Compile Include="ListUtil.fs"/>
+        <Compile Include="Parsing.fs"/>
+        <Compile Include="IO.fs"/>
     </ItemGroup>
 
 </Project>

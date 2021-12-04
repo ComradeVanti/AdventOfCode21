@@ -16,6 +16,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bingo2", "Bingo2\Bingo2.fsp
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Util", "Util\Util.fsproj", "{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SonarSweep1", "SonarSweep1\SonarSweep1.fsproj", "{233258E4-ACEC-4084-BD59-F5F21F0374A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{233258E4-ACEC-4084-BD59-F5F21F0374A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{233258E4-ACEC-4084-BD59-F5F21F0374A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{233258E4-ACEC-4084-BD59-F5F21F0374A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{233258E4-ACEC-4084-BD59-F5F21F0374A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

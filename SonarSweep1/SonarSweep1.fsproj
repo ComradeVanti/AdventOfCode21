@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <WarnOn>3390;$(WarnOn)</WarnOn>
+        <AssemblyName>AdventOfCode21.SonarSweep1</AssemblyName>
+        <RootNamespace>AdventOfCode21.SonarSweep1</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="input.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Compile Include="Parsing.fs"/>
+        <Compile Include="Sonar.fs"/>
+        <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Util\Util.fsproj"/>
+    </ItemGroup>
+
+</Project>
