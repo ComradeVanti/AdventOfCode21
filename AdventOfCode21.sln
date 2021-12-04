@@ -14,6 +14,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bingo1", "Bingo1\Bingo1.fsp
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Bingo2", "Bingo2\Bingo2.fsproj", "{3B820D1B-9D66-487B-B918-0D0899063010}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Util", "Util\Util.fsproj", "{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{3B820D1B-9D66-487B-B918-0D0899063010}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B820D1B-9D66-487B-B918-0D0899063010}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B820D1B-9D66-487B-B918-0D0899063010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B90BF9-7E6C-40D5-BA58-C1C9ABA6E30F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

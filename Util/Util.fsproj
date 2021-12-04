@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <WarnOn>3390;$(WarnOn)</WarnOn>
+        <AssemblyName>AdventOfCode21.Util</AssemblyName>
+        <RootNamespace>AdventOfCode21</RootNamespace>
+    </PropertyGroup>
+
+</Project>
