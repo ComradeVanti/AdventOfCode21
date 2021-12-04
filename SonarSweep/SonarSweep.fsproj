@@ -4,6 +4,8 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
         <WarnOn>3390;$(WarnOn)</WarnOn>
+        <AssemblyName>AdventOfCode21.SonarSweep</AssemblyName>
+        <RootNamespace>AdventOfCode21.SonarSweep</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

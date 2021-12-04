@@ -4,6 +4,8 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
         <WarnOn>3390;$(WarnOn)</WarnOn>
+        <AssemblyName>AdventOfCode21.Dive2</AssemblyName>
+        <RootNamespace>AdventOfCode21.Dive2</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
