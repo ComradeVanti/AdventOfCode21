@@ -12,6 +12,7 @@
         <Compile Include="OptionBuilder.fs"/>
         <Compile Include="ResultBuilder.fs"/>
         <Compile Include="OptionUtil.fs"/>
+        <Compile Include="ResultUtil.fs"/>
         <Compile Include="ConsoleUtil.fs"/>
         <Compile Include="ListUtil.fs"/>
         <Compile Include="Parsing.fs"/>

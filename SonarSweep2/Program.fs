@@ -1,38 +1,33 @@
-module AdventOfCode21.SonarSweep
+module AdventOfCode21.SonarSweep1.Program
 
-open System.IO
+open System
+open AdventOfCode21
+open AdventOfCode21.Parsing
+open AdventOfCode21.SonarSweep1.Parsing
+open AdventOfCode21.SonarSweep1.Sonar
 
+let tryParseInput args =
+    res {
+        let! readings =
+            args
+            |> Array.tryItem 0
+            |> Option.asResult "Invalid number of args"
+            |> Result.bind IO.tryReadLines
+            |> Result.bindOption tryParseInput "Could not parse readings"
 
-let private analyse windowSize numbers =
-    numbers
-    |> List.windowed windowSize
-    |> List.map List.sum
-    |> List.pairwise
-    |> List.filter (fun (f, s) -> s > f)
-    |> List.length
+        let! windowSize =
+            args
+            |> Array.tryItem 1
+            |> Option.asResult "Missing parameter \"Window size\""
+            |> Result.bindOption tryParseInt "Could not parse window-size"
 
-let private tryRunForFile windowSize path =
-    try
-        File.ReadAllLines path
-        |> Array.toList
-        |> List.map int
-        |> analyse windowSize
-        |> Ok
-    with
-    | _ -> Error "Invalid path"
+        return readings, windowSize
+    }
 
 
 [<EntryPoint>]
 let main args =
-    let path = args |> Array.item 0
-    let windowSize = args |> Array.item 1 |> int
-
-    path
-    |> tryRunForFile windowSize
-    |> function
-        | Ok num ->
-            printf "%d" num
-            0
-        | Error e ->
-            printf "%s" e
-            1
+    args
+    |> tryParseInput
+    |> Result.map analyze
+    |> Console.printResult
