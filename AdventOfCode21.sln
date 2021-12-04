@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SonarSweep", "SonarSweep\SonarSweep.fsproj", "{2E3C6D98-DC97-4340-A898-1C334CE3BD1D}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SonarSweep2", "SonarSweep2\SonarSweep2.fsproj", "{2E3C6D98-DC97-4340-A898-1C334CE3BD1D}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Dive1", "Dive1\Dive1.fsproj", "{0FF03978-DE0A-4076-8C5E-8FEF764EE271}"
 EndProject
