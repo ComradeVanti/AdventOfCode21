@@ -9,14 +9,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="OptionBuilder.fs"/>
-        <Compile Include="ResultBuilder.fs"/>
-        <Compile Include="OptionUtil.fs"/>
-        <Compile Include="ResultUtil.fs"/>
-        <Compile Include="ConsoleUtil.fs"/>
-        <Compile Include="ListUtil.fs"/>
-        <Compile Include="Parsing.fs"/>
-        <Compile Include="IO.fs"/>
+        <Compile Include="OptionBuilder.fs" />
+        <Compile Include="ResultBuilder.fs" />
+        <Compile Include="OptionUtil.fs" />
+        <Compile Include="ResultUtil.fs" />
+        <Compile Include="TupleUtil.fs" />
+        <Compile Include="ConsoleUtil.fs" />
+        <Compile Include="ListUtil.fs" />
+        <Compile Include="Parsing.fs" />
+        <Compile Include="Vector.fs" />
+        <Compile Include="Line.fs" />
+        <Compile Include="IO.fs" />
     </ItemGroup>
 
 </Project>
