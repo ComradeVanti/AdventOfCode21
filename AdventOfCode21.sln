@@ -20,6 +20,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SonarSweep1", "SonarSweep1\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HydrothermalVenture1", "HydrothermalVenture1\HydrothermalVenture1.fsproj", "{54351AC2-7AF3-4E6B-A5E8-ECF8C758CDA2}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HydrothermalVenture2", "HydrothermalVenture2\HydrothermalVenture2.fsproj", "{52C51F89-B256-4898-A6BD-95A5BA00106F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{54351AC2-7AF3-4E6B-A5E8-ECF8C758CDA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54351AC2-7AF3-4E6B-A5E8-ECF8C758CDA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54351AC2-7AF3-4E6B-A5E8-ECF8C758CDA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C51F89-B256-4898-A6BD-95A5BA00106F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C51F89-B256-4898-A6BD-95A5BA00106F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C51F89-B256-4898-A6BD-95A5BA00106F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C51F89-B256-4898-A6BD-95A5BA00106F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

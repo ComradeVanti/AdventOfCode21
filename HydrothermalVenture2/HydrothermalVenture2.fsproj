@@ -4,8 +4,8 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
         <WarnOn>3390;$(WarnOn)</WarnOn>
-        <AssemblyName>AdventOfCode21.HydrothermalVenture1</AssemblyName>
-        <RootNamespace>AdventOfCode21.HydrothermalVenture1</RootNamespace>
+        <AssemblyName>AdventOfCode21.HydrothermalVenture2</AssemblyName>
+        <RootNamespace>AdventOfCode21.HydrothermalVenture2</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
