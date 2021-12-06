@@ -21,12 +21,11 @@ let tryParseInput args =
     }
 
 let private analyze pop =
-
     let rec progressUntilDone day pop =
-        if day = 80 then
+        if day = 256 then
             pop |> fishCount
         else
-            pop |> progressPop |> progressUntilDone (day + 1)
+            pop |> progress |> progressUntilDone (day + 1)
 
     pop |> progressUntilDone 0
 
