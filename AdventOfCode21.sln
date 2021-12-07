@@ -26,6 +26,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LanternFish1", "LanternFish
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheTreacheryOfWhales1", "TheTreacheryOfWhales1\TheTreacheryOfWhales1.fsproj", "{4628A0FE-0B3B-4F60-8AA7-706D4F926092}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheTreacheryOfWhales2", "TheTreacheryOfWhales2\TheTreacheryOfWhales2.fsproj", "{B920AD02-FA44-4568-AFAA-2C520440192B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{4628A0FE-0B3B-4F60-8AA7-706D4F926092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4628A0FE-0B3B-4F60-8AA7-706D4F926092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4628A0FE-0B3B-4F60-8AA7-706D4F926092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B920AD02-FA44-4568-AFAA-2C520440192B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B920AD02-FA44-4568-AFAA-2C520440192B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B920AD02-FA44-4568-AFAA-2C520440192B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B920AD02-FA44-4568-AFAA-2C520440192B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
