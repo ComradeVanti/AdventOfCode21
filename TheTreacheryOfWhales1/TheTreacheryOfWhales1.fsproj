@@ -4,8 +4,8 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
         <WarnOn>3390;$(WarnOn)</WarnOn>
-        <AssemblyName>AdventOfCode21.LanternFish1</AssemblyName>
-        <RootNamespace>AdventOfCode21.LanternFish1</RootNamespace>
+        <RootNamespace>AdventOfCode21.TheTreacheryOfWhales1</RootNamespace>
+        <AssemblyName>AdventOfCode21.TheTreacheryOfWhales1</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
@@ -13,7 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Include="FishSimulation.fs"/>
+        <Compile Include="AlignNumbers.fs"/>
         <Compile Include="Parsing.fs"/>
         <Compile Include="Program.fs"/>
     </ItemGroup>

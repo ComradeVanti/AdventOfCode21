@@ -8,8 +8,7 @@ let tryParseInput entries =
 
     let makePop daysToBabies =
 
-        let addToPop pop daysToBaby =
-            pop |> addFish daysToBaby
+        let addToPop pop daysToBaby = pop |> addFish daysToBaby
 
         daysToBabies |> List.fold addToPop emptyPop
 

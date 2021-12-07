@@ -4,8 +4,8 @@ module AdventOfCode21.Console
 let printResult =
     function
     | Ok value ->
-        printf "%A" value
+        printfn "Output: %A" value
         0
     | Error e ->
-        printf "Error: %s" e
+        eprintfn "Error: %s" e
         1
