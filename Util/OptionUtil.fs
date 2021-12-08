@@ -11,7 +11,7 @@ let collect options =
             | Some item, Some items -> Some(item :: items)
             | _ -> None
 
-    collectUntilDone options
+    options |> Seq.toList |> collectUntilDone
 
 let asResult noneError opt =
     match opt with

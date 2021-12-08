@@ -28,6 +28,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheTreacheryOfWhales1", "Th
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheTreacheryOfWhales2", "TheTreacheryOfWhales2\TheTreacheryOfWhales2.fsproj", "{B920AD02-FA44-4568-AFAA-2C520440192B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SevenSegmentSearch1", "SevenSegmentSearch1\SevenSegmentSearch1.fsproj", "{2008DBF1-7DEC-4D40-88E3-AC281DB949B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,5 +92,9 @@ Global
 		{B920AD02-FA44-4568-AFAA-2C520440192B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B920AD02-FA44-4568-AFAA-2C520440192B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B920AD02-FA44-4568-AFAA-2C520440192B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2008DBF1-7DEC-4D40-88E3-AC281DB949B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2008DBF1-7DEC-4D40-88E3-AC281DB949B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2008DBF1-7DEC-4D40-88E3-AC281DB949B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2008DBF1-7DEC-4D40-88E3-AC281DB949B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
