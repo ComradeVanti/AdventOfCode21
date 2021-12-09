@@ -30,7 +30,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheTreacheryOfWhales2", "Th
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SevenSegmentSearch1", "SevenSegmentSearch1\SevenSegmentSearch1.fsproj", "{2008DBF1-7DEC-4D40-88E3-AC281DB949B9}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SmokeBasin", "SmokeBasin\SmokeBasin.fsproj", "{8A5FC681-36D0-4436-BCC0-B7C2AE77EBD2}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SmokeBasin1", "SmokeBasin1\SmokeBasin1.fsproj", "{8A5FC681-36D0-4436-BCC0-B7C2AE77EBD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
