@@ -22,6 +22,7 @@
         <Compile Include="Parsing.fs"/>
         <Compile Include="Vector.fs"/>
         <Compile Include="Line.fs"/>
+        <Compile Include="Grid.fs"/>
         <Compile Include="IO.fs"/>
     </ItemGroup>
 
