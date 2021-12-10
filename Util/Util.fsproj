@@ -24,6 +24,7 @@
         <Compile Include="Line.fs"/>
         <Compile Include="Grid.fs"/>
         <Compile Include="IO.fs"/>
+        <Compile Include="Stack.fs"/>
     </ItemGroup>
 
 </Project>

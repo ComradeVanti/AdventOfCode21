@@ -34,6 +34,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SmokeBasin1", "SmokeBasin1\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SmokeBasin2", "SmokeBasin2\SmokeBasin2.fsproj", "{50A4D638-208A-4078-A4FB-90CA3CEB2DE4}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SyntaxScoring1", "SyntaxScoring1\SyntaxScoring1.fsproj", "{998AB257-59D6-46DB-9DE6-DFCA9E46699E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{50A4D638-208A-4078-A4FB-90CA3CEB2DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50A4D638-208A-4078-A4FB-90CA3CEB2DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50A4D638-208A-4078-A4FB-90CA3CEB2DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{998AB257-59D6-46DB-9DE6-DFCA9E46699E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{998AB257-59D6-46DB-9DE6-DFCA9E46699E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{998AB257-59D6-46DB-9DE6-DFCA9E46699E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{998AB257-59D6-46DB-9DE6-DFCA9E46699E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

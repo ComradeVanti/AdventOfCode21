@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <WarnOn>3390;$(WarnOn)</WarnOn>
+        <AssemblyName>AdventOfCode21.SyntaxScoring1</AssemblyName>
+        <RootNamespace>AdventOfCode21.SyntaxScoring1</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Util\Util.fsproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="Nav.fs"/>
+        <Compile Include="NavSyntax.fs"/>
+        <Compile Include="Parsing.fs"/>
+        <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+</Project>

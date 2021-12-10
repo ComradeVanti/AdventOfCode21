@@ -8,3 +8,10 @@ let bindOption f noneError =
             | Some value -> Ok value
             | None -> Error noneError
     )
+
+let collectErrors results =
+    results
+    |> List.choose
+        (function
+        | Ok _ -> None
+        | Error e -> Some e)
