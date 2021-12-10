@@ -9,3 +9,7 @@ let printResult =
     | Error e ->
         eprintfn "Error: %s" e
         1
+
+let passLog o =
+    printfn "%A" o
+    o

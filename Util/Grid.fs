@@ -11,6 +11,20 @@ type CellPos = Vector
 [<RequireQualifiedAccess>]
 module Grid =
 
+    let private rows (Rows rows) = rows
+
+    let private cellsInRow (Cells cells) = cells
+
+    let height grid = grid |> rows |> List.length
+
+    let width grid = grid |> rows |> List.head |> cellsInRow |> List.length
+
+    let contains (XY (x, y): CellPos) grid =
+        x >= 0
+        && y >= 0
+        && x < (grid |> width)
+        && y < (grid |> height)
+
     let tryMake rows =
 
         let rowsAreEqualLength =
@@ -21,10 +35,6 @@ module Grid =
         else
             None
 
-    let private rows (Rows rows) = rows
-
-    let private cellsInRow (Cells cells) = cells
-
     let tryGet (XY (x, y): CellPos) grid =
         grid
         |> rows
@@ -32,13 +42,23 @@ module Grid =
         |> Option.map cellsInRow
         |> Option.bind (List.tryItem x)
 
-    let getAdjacentTo (XY (x, y): CellPos) grid =
-        [ grid |> tryGet (XY(x - 1, y))
-          grid |> tryGet (XY(x + 1, y))
-          grid |> tryGet (XY(x, y - 1))
-          grid |> tryGet (XY(x, y + 1)) ]
-        |> List.choose id
+    let offset dx dy (XY (x, y): CellPos) : CellPos = XY(x + dx, y + dy)
 
+    let northOf = offset 0 1
+
+    let southOf = offset 0 -1
+
+    let eastOf = offset 1 0
+
+    let westOf = offset -1 0
+
+    let getAdjacentPositionsTo pos : CellPos list =
+        [ northOf pos; eastOf pos; southOf pos; westOf pos ]
+
+    let getAdjacentTo pos grid =
+        pos
+        |> getAdjacentPositionsTo
+        |> List.choose (fun pos -> grid |> tryGet pos)
 
     let cells (Rows rows) : (_ * CellPos) list =
         rows
