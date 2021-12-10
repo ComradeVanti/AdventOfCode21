@@ -15,3 +15,8 @@ let collectErrors results =
         (function
         | Ok _ -> None
         | Error e -> Some e)
+
+let isOk =
+    function
+    | Ok _ -> true
+    | Error _ -> false

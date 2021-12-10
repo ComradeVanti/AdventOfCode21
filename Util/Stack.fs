@@ -9,6 +9,13 @@ module Stack =
 
     let push item (stack: Stack<_>) : Stack<_> = item :: stack
 
-    let pop (stack: Stack<_>) : Stack<_> = stack |> List.tail
+    let pop (stack: Stack<_>) : Stack<_> =
+        match stack with
+        | [] -> []
+        | _ :: tail -> tail
 
     let tryPeek (stack: Stack<_>) = stack |> List.tryHead
+
+    let fromList (list: _ list) : Stack<_> = list
+
+    let toList (stack: Stack<_>) : _ list = stack

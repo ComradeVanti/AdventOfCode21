@@ -9,6 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="Math.fs"/>
         <Compile Include="OptionBuilder.fs"/>
         <Compile Include="ResultBuilder.fs"/>
         <Compile Include="OptionUtil.fs"/>
@@ -18,7 +19,6 @@
         <Compile Include="StringUtil.fs"/>
         <Compile Include="ConsoleUtil.fs"/>
         <Compile Include="ListUtil.fs"/>
-        <Compile Include="Math.fs"/>
         <Compile Include="Parsing.fs"/>
         <Compile Include="Vector.fs"/>
         <Compile Include="Line.fs"/>
