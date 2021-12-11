@@ -34,3 +34,5 @@ let median (list: int64 list) =
             else
                 [ list |> List.item i; list |> List.item (i + 1) ]
                 |> List.average
+
+let foldi folder seed list = list |> List.indexed |> List.fold folder seed
