@@ -13,3 +13,7 @@ let printResult =
 let passLog o =
     printfn "%A" o
     o
+
+let passLogWith formatter o =
+    printfn "%A" (formatter o)
+    o

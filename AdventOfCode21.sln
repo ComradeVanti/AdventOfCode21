@@ -38,6 +38,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SyntaxScoring1", "SyntaxSco
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SyntaxScoring2", "SyntaxScoring2\SyntaxScoring2.fsproj", "{D3F0731A-76D8-40D7-B29F-8AA330ECD031}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DumboOctopus1", "DumboOctopus1\DumboOctopus1.fsproj", "{04DE9707-9E5A-44FD-91E9-FFC4639F05AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,5 +122,9 @@ Global
 		{D3F0731A-76D8-40D7-B29F-8AA330ECD031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3F0731A-76D8-40D7-B29F-8AA330ECD031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3F0731A-76D8-40D7-B29F-8AA330ECD031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04DE9707-9E5A-44FD-91E9-FFC4639F05AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04DE9707-9E5A-44FD-91E9-FFC4639F05AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04DE9707-9E5A-44FD-91E9-FFC4639F05AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04DE9707-9E5A-44FD-91E9-FFC4639F05AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

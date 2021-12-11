@@ -3,9 +3,9 @@ module AdventOfCode21.List
 
 open AdventOfCode21.Math
 
-let countWith f list = list |> List.filter f |> List.length
+let countWhere f list = list |> List.filter f |> List.length
 
-let countItem item list = list |> countWith ((=) item)
+let countItem item list = list |> countWhere ((=) item)
 
 let groupItemCounts list =
     list

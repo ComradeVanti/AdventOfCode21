@@ -7,4 +7,4 @@ let analyze (readings: int list, windowSize) =
     |> List.windowed windowSize
     |> List.map List.sum
     |> List.pairwise
-    |> List.countWith (fun (f, n) -> f < n)
+    |> List.countWhere (fun (f, n) -> f < n)

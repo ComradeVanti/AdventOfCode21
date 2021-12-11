@@ -46,18 +46,35 @@ module Grid =
 
     let northOf = offset 0 1
 
+    let northEastOf = offset 1 1
+
+    let northWestOf = offset -1 1
+
     let southOf = offset 0 -1
+
+    let southEastOf = offset 1 -1
+
+    let southWestOf = offset -1 -1
 
     let eastOf = offset 1 0
 
     let westOf = offset -1 0
 
-    let getAdjacentPositionsTo pos : CellPos list =
-        [ northOf pos; eastOf pos; southOf pos; westOf pos ]
+    let adjacent pos = [ northOf pos; eastOf pos; southOf pos; westOf pos ]
+
+    let surrounding pos =
+        [ northOf pos
+          northEastOf pos
+          eastOf pos
+          southEastOf pos
+          southOf pos
+          southWestOf pos
+          westOf pos
+          northWestOf pos ]
 
     let getAdjacentTo pos grid =
         pos
-        |> getAdjacentPositionsTo
+        |> adjacent
         |> List.choose (fun pos -> grid |> tryGet pos)
 
     let cells (Rows rows) : (_ * CellPos) list =
@@ -70,3 +87,23 @@ module Grid =
         |> List.concat
 
     let filter f grid = grid |> cells |> List.filter f
+
+    let forAll pred grid = grid |> cells |> List.forall pred
+
+    let map f grid =
+        grid
+        |> rows
+        |> List.map cellsInRow
+        |> List.map (List.map f)
+        |> List.map Cells
+        |> Rows
+
+    let mapAt (XY (x, y): CellPos) f grid =
+        grid
+        |> rows
+        |> List.mapAt
+            y
+            (fun row -> row |> cellsInRow |> List.mapAt x f |> Cells)
+        |> Rows
+
+    let countWhere pred grid = grid |> cells |> List.countWhere pred

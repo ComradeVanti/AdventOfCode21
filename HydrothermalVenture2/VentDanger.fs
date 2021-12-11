@@ -29,11 +29,11 @@ let private calcPossiblePoints lines =
 let calcDanger lines =
 
     let countContainingLines point =
-        lines |> List.countWith (containsPoint point)
+        lines |> List.countWhere (containsPoint point)
 
     let points = lines |> calcPossiblePoints
 
     points
     |> Seq.map countContainingLines
     |> Seq.toList
-    |> List.countWith (fun c -> c >= 2)
+    |> List.countWhere (fun c -> c >= 2)
