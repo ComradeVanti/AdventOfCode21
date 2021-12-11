@@ -9,13 +9,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Parsing.fs" />
-        <Compile Include="Sonar.fs" />
-        <Compile Include="Program.fs" />
+        <Compile Include="Parsing.fs"/>
+        <Compile Include="Sonar.fs"/>
+        <Compile Include="Program.fs"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Util\Util.fsproj" />
+        <ProjectReference Include="..\Util\Util.fsproj"/>
     </ItemGroup>
 
 </Project>
