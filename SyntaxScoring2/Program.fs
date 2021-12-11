@@ -23,15 +23,15 @@ let tryParseInput args =
 
 let score dels =
 
-    let addScore acc s = (acc * 5L) + (int64 s)
+    let addScore acc s = (acc * 5L) + s
 
     dels
     |> List.map
         (function
-        | Round -> 1
-        | Square -> 2
-        | Curly -> 3
-        | Angle -> 4)
+        | Round -> 1L
+        | Square -> 2L
+        | Curly -> 3L
+        | Angle -> 4L)
     |> List.fold addScore 0L
 
 [<EntryPoint>]
