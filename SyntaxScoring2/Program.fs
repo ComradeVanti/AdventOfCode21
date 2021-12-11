@@ -33,7 +33,6 @@ let score dels =
         | Curly -> 3
         | Angle -> 4)
     |> List.fold addScore 0L
-    |> Console.passLog
 
 [<EntryPoint>]
 let main args =
