@@ -8,3 +8,5 @@ let splitAt (c: char) (s: string) =
     |> Array.toList
 
 let splitCSV s = s |> splitAt ','
+
+let isLower (s: string) = s |> Seq.forall Char.IsLower
