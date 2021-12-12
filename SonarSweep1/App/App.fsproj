@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <WarnOn>3390;$(WarnOn)</WarnOn>
+        <AssemblyName>ComradeVanti.AC21.SonarSweep1.App</AssemblyName>
+        <RootNamespace>ComradeVanti.AC21.SonarSweep1</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="ListExt.fs"/>
+        <Compile Include="ResultExt.fs"/>
+        <Compile Include="OptionExt.fs"/>
+        <Compile Include="Scanning.fs"/>
+        <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+</Project>
