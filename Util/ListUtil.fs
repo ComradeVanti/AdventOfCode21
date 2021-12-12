@@ -36,3 +36,5 @@ let median (list: int64 list) =
                 |> List.average
 
 let foldi folder seed list = list |> List.indexed |> List.fold folder seed
+
+let hasDuplicates list = list |> List.distinct <> list
