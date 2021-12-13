@@ -46,6 +46,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PassagePathing2", "PassageP
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TransparentOrigami1", "TransparentOrigami1\TransparentOrigami1.fsproj", "{C9D4949A-47F3-4F86-BAA2-829962519786}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TransparentOrigami2", "TransparentOrigami2\TransparentOrigami2.fsproj", "{1FBCCFED-6A94-4ADD-ABB0-E2282E066E5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -144,5 +146,9 @@ Global
 		{C9D4949A-47F3-4F86-BAA2-829962519786}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9D4949A-47F3-4F86-BAA2-829962519786}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9D4949A-47F3-4F86-BAA2-829962519786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FBCCFED-6A94-4ADD-ABB0-E2282E066E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FBCCFED-6A94-4ADD-ABB0-E2282E066E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FBCCFED-6A94-4ADD-ABB0-E2282E066E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FBCCFED-6A94-4ADD-ABB0-E2282E066E5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
