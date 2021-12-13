@@ -38,3 +38,22 @@ let median (list: int64 list) =
 let foldi folder seed list = list |> List.indexed |> List.fold folder seed
 
 let hasDuplicates list = list |> List.distinct <> list
+
+let tryFindIndexOf item list = list |> List.tryFindIndex ((=) item)
+
+let splitAtItem item list =
+    match list |> tryFindIndexOf item with
+    | Some index -> list |> List.take index, list |> List.skip (index + 1)
+    | None -> list, []
+
+let tryToTuple =
+    function
+    | [ a; b ] -> Some(a, b)
+    | _ -> None
+
+let filterSplit pred list =
+    (list |> List.filter pred, list |> List.filter (not << pred))
+
+let filterMap pred f list =
+    list
+    |> List.map (fun item -> if pred item then f item else item)

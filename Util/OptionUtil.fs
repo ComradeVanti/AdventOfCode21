@@ -17,3 +17,11 @@ let asResult noneError opt =
     match opt with
     | Some item -> Ok item
     | None -> Error noneError
+
+let collectTuple (a, b) =
+    match a with
+    | Some a ->
+        match b with
+        | Some b -> Some(a, b)
+        | _ -> None
+    | _ -> None

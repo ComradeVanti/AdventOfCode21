@@ -44,6 +44,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PassagePathing1", "PassageP
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PassagePathing2", "PassagePathing2\PassagePathing2.fsproj", "{FFF80031-E323-4BB3-872A-CF9EDC24548F}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TransparentOrigami1", "TransparentOrigami1\TransparentOrigami1.fsproj", "{C9D4949A-47F3-4F86-BAA2-829962519786}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,5 +140,9 @@ Global
 		{FFF80031-E323-4BB3-872A-CF9EDC24548F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFF80031-E323-4BB3-872A-CF9EDC24548F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFF80031-E323-4BB3-872A-CF9EDC24548F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D4949A-47F3-4F86-BAA2-829962519786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D4949A-47F3-4F86-BAA2-829962519786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D4949A-47F3-4F86-BAA2-829962519786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D4949A-47F3-4F86-BAA2-829962519786}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
