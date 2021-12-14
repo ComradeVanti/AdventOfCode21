@@ -57,3 +57,8 @@ let filterSplit pred list =
 let filterMap pred f list =
     list
     |> List.map (fun item -> if pred item then f item else item)
+
+let sortByCount list =
+    list
+    |> List.distinct
+    |> List.sortBy (fun item -> list |> countItem item)

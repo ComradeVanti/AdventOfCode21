@@ -17,3 +17,5 @@ let readAfter (c: char) (s: string) =
     if i = -1 then "" else s.Substring(i + 1)
 
 let contains (c: char) (s: string) = s.Contains c
+
+let tryGet i (s: string) = if i < s.Length then Some s.[i] else None
