@@ -22,7 +22,9 @@ let tryParseInput args =
 let analyze (template, rules) =
 
     let rec growUntilDone step polymer =
-        if step = 10 then
+        printfn $"%d{step}"
+
+        if step = 40 then
             polymer
         else
             polymer |> Polymer.grow rules |> growUntilDone (step + 1)

@@ -1,26 +1,36 @@
 ﻿module AdventOfCode21.ExtendedPolymerization1.Parsing
 
-open AdventOfCode21.ExtendedPolymerization1.Polymer
 open AdventOfCode21
+open AdventOfCode21.ExtendedPolymerization1.Polymer
+open Microsoft.FSharp.Collections
 
-let tryParseInput lines =
+let tryParseInput lines : (ElementMap * InsertionRule list) option =
 
     let templateLine = lines |> List.head
     let ruleLines = lines |> List.skip 2
 
-    let parseTemplate line = line |> Seq.toList |> Elements
+    let parseMap line : ElementMap =
 
-    let tryParseRule line =
+        let addPair map pair = map |> Map.mapAtOrAdd pair (fun i -> i + 1UL) 1UL
+
+        let addTerminatorPair map = map |> Map.add (line |> Seq.last, '/') 1UL
+
+        line
+        |> Seq.pairwise
+        |> Seq.fold addPair Map.empty
+        |> addTerminatorPair
+
+    let tryParseRule line : InsertionRule option =
         opt {
-            let! a = line |> String.tryGet 0
-            let! b = line |> String.tryGet 1
-            let! res = line |> String.tryGet 6
+            let! f = line |> String.tryGet 0
+            let! s = line |> String.tryGet 1
+            let! ins = line |> String.tryGet 6
 
-            return { A = a; B = b; Res = res }
+            return { Pair = (f, s); Replacement = ins }
         }
 
     opt {
-        let template = templateLine |> parseTemplate
+        let map = templateLine |> parseMap
         let! rules = ruleLines |> List.map tryParseRule |> Option.collect
-        return template, rules
+        return map, rules
     }

@@ -19,3 +19,5 @@ let readAfter (c: char) (s: string) =
 let contains (c: char) (s: string) = s.Contains c
 
 let tryGet i (s: string) = if i < s.Length then Some s.[i] else None
+
+let replace (substr: string) repl (s: string) = s.Replace(substr, repl)

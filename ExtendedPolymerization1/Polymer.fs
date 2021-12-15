@@ -1,49 +1,67 @@
 ﻿module AdventOfCode21.ExtendedPolymerization1.Polymer
 
 open AdventOfCode21
+open Microsoft.FSharp.Collections
 
 type Element = char
 
-type Polymer = Elements of Element list
+type ElementPair = Element * Element
 
-type InsertionRule = { A: Element; B: Element; Res: Element }
+type PairCount = uint64
+
+type ElementMap = Map<ElementPair, PairCount>
+
+type InsertionRule = { Pair: ElementPair; Replacement: Element }
 
 
-let elements (Elements elements) = elements
+let newPairs rule : ElementPair * ElementPair =
+    (rule.Pair |> fst, rule.Replacement), (rule.Replacement, rule.Pair |> snd)
 
-let squash p1 p2 =
-    List.append (p1 |> elements) (p2 |> elements |> List.skip 1)
-    |> Elements
+let terminatorPair map =
+    map
+    |> Map.toList
+    |> List.find (fst >> snd >> (=) '/')
+    |> fst
 
-let grow rules polymer =
+let grow rules (map: ElementMap) : ElementMap =
 
-    let tryGetNewElement (e1, e2) =
-        rules
-        |> List.tryFind (fun rule -> rule.A = e1 && rule.B = e2)
-        |> Option.map (fun rule -> rule.Res)
+    let countOf pair = map |> Map.tryFind pair |> Option.defaultValue 0UL
 
-    let growPair (e1, e2) =
-        tryGetNewElement (e1, e2)
-        |> function
-            | Some element -> [ e1; element; e2 ] |> Elements
-            | None -> [ e1; e2 ] |> Elements
+    let apply newMap rule =
+        let count = countOf rule.Pair
+        let p1, p2 = rule |> newPairs
 
-    polymer
+        if count > 0UL then
+            newMap
+            |> Map.mapAtOrAdd p1 ((+) count) count
+            |> Map.mapAtOrAdd p2 ((+) count) count
+        else
+            newMap
+
+    let copyTerminatorPair newMap =
+        newMap |> Map.add (map |> terminatorPair) 1UL
+
+    rules |> List.fold apply Map.empty |> copyTerminatorPair
+
+let elements elementMap =
+    elementMap
+    |> Map.toList
+    |> List.map fst
+    |> List.map fst
+    |> List.distinct
+
+let countElement element (elementMap: ElementMap) =
+    elementMap
+    |> Map.toList
+    |> List.filter (fst >> fst >> (=) element)
+    |> List.map (snd >> bigint)
+    |> List.sum
+
+let elementCounts elementMap =
+    elementMap
     |> elements
-    |> List.pairwise
-    |> List.map growPair
-    |> List.reduce squash
+    |> List.map (fun element -> elementMap |> countElement element)
 
-let mostCommonElement polymer =
-    polymer |> elements |> List.sortByCount |> List.last
+let countMostCommonElement elementMap = elementMap |> elementCounts |> List.max
 
-let leastCommonElement polymer =
-    polymer |> elements |> List.sortByCount |> List.head
-
-let countElement e polymer = polymer |> elements |> List.countItem e
-
-let countMostCommonElement polymer =
-    polymer |> countElement (polymer |> mostCommonElement)
-
-let countLeastCommonElement polymer =
-    polymer |> countElement (polymer |> leastCommonElement)
+let countLeastCommonElement elementMap = elementMap |> elementCounts |> List.min
