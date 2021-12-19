@@ -18,6 +18,16 @@ let mapAt i f list =
     list
     |> List.mapi (fun index item -> if index = i then item |> f else item)
 
+let collectAt i f list =
+    list
+    |> List.mapi
+        (fun index item ->
+            if index = i then
+                item |> f
+            else
+                [ item ])
+    |> List.concat
+
 let replaceAt i item list = list |> mapAt i (fun _ -> item)
 
 let median (list: int64 list) =
@@ -32,10 +42,12 @@ let median (list: int64 list) =
             if i |> isEven then
                 list |> List.item i
             else
-                [ list |> List.item i; list |> List.item (i + 1) ]
+                [ list |> List.item i
+                  list |> List.item (i + 1) ]
                 |> List.average
 
-let foldi folder seed list = list |> List.indexed |> List.fold folder seed
+let foldi folder seed list =
+    list |> List.indexed |> List.fold folder seed
 
 let hasDuplicates list = list |> List.distinct <> list
 
@@ -62,3 +74,5 @@ let sortByCount list =
     list
     |> List.distinct
     |> List.sortBy (fun item -> list |> countItem item)
+
+let appendItem item list = list @ [ item ]

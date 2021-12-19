@@ -19,6 +19,8 @@ module Grid =
 
     let width grid = grid |> rows |> List.head |> cellsInRow |> List.length
 
+    let positions grid = Seq.allInRect (grid |> width) (grid |> height)
+
     let contains (XY (x, y): CellPos) grid =
         x >= 0
         && y >= 0
@@ -107,3 +109,7 @@ module Grid =
         |> Rows
 
     let countWhere pred grid = grid |> cells |> List.countWhere pred
+
+    let topLeft _ = XY(0, 0)
+
+    let bottomRight grid = XY((grid |> width) - 1, (grid |> height) - 1)

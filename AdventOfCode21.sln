@@ -50,6 +50,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TransparentOrigami2", "Tran
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ExtendedPolymerization1", "ExtendedPolymerization1\ExtendedPolymerization1.fsproj", "{7EC2737D-DADB-4011-9BBD-C8180E70838B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chiton1", "Chiton1\Chiton1.fsproj", "{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -156,5 +158,9 @@ Global
 		{7EC2737D-DADB-4011-9BBD-C8180E70838B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EC2737D-DADB-4011-9BBD-C8180E70838B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EC2737D-DADB-4011-9BBD-C8180E70838B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

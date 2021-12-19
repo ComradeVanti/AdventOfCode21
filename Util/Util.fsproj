@@ -17,6 +17,7 @@
         <Compile Include="ResultUtil.fs"/>
         <Compile Include="TupleUtil.fs"/>
         <Compile Include="SetUtil.fs"/>
+        <Compile Include="SeqUtil.fs"/>
         <Compile Include="MapUtil.fs"/>
         <Compile Include="StringUtil.fs"/>
         <Compile Include="ConsoleUtil.fs"/>
