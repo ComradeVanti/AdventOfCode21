@@ -52,6 +52,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ExtendedPolymerization1", "
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chiton1", "Chiton1\Chiton1.fsproj", "{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chiton2", "Chiton2\Chiton2.fsproj", "{BA14F964-CF36-47E3-A9A4-7850198F8EE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -162,5 +164,9 @@ Global
 		{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E8E014B-686F-4B4C-AECB-CF67CD23E9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA14F964-CF36-47E3-A9A4-7850198F8EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA14F964-CF36-47E3-A9A4-7850198F8EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA14F964-CF36-47E3-A9A4-7850198F8EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA14F964-CF36-47E3-A9A4-7850198F8EE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

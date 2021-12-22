@@ -4,8 +4,8 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
         <WarnOn>3390;$(WarnOn)</WarnOn>
-        <AssemblyName>AdventOfCode21.Chiton1</AssemblyName>
-        <RootNamespace>AdventOfCode21.Chiton1</RootNamespace>
+        <AssemblyName>AdventOfCode21.Chiton2</AssemblyName>
+        <RootNamespace>AdventOfCode21.Chiton2</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -13,13 +13,14 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Include="Navigation.fs"/>
-        <Compile Include="Parsing.fs"/>
-        <Compile Include="Program.fs"/>
+        <PackageReference Include="ComradeVanti.FDijkstra" Version="1.0.3"/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="ComradeVanti.FDijkstra" Version="1.0.1"/>
+        <Compile Include="Navigation.fs"/>
+        <Compile Include="ScaleMap.fs"/>
+        <Compile Include="Parsing.fs"/>
+        <Compile Include="Program.fs"/>
     </ItemGroup>
 
 </Project>

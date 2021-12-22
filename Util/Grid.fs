@@ -15,6 +15,8 @@ module Grid =
 
     let private cellsInRow (Cells cells) = cells
 
+    let toList grid = grid |> rows |> List.map cellsInRow
+
     let height grid = grid |> rows |> List.length
 
     let width grid = grid |> rows |> List.head |> cellsInRow |> List.length
