@@ -1,4 +1,4 @@
-module AdventOfCode21.LanternFish1.Program
+module AdventOfCode21.PacketDecoder1.Program
 
 open System
 open AdventOfCode21
