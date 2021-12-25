@@ -7,3 +7,5 @@ let allInRect w h =
             for y in [ 0 .. h - 1 ] do
                 yield (x, y)
     }
+
+let splitAt i s = s |> Seq.take i, s |> Seq.skip i

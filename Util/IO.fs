@@ -9,8 +9,10 @@ let tryReadLines path =
     with
     | _ -> Error "Could not read file"
 
-let tryReadCSV path =
+let tryReadText path =
     try
-        File.ReadAllText path |> String.splitCSV |> Ok
+        File.ReadAllText path |> Ok
     with
     | _ -> Error "Could not read file"
+
+let tryReadCSV path = tryReadText path |> Result.map String.splitCSV

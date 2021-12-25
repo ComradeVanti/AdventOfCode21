@@ -54,6 +54,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chiton1", "Chiton1\Chiton1.
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chiton2", "Chiton2\Chiton2.fsproj", "{BA14F964-CF36-47E3-A9A4-7850198F8EE1}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PacketDecoder1", "PacketDecoder1\PacketDecoder1.fsproj", "{C89B357E-CC47-45A7-9423-8D216C01A32A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -168,5 +170,9 @@ Global
 		{BA14F964-CF36-47E3-A9A4-7850198F8EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA14F964-CF36-47E3-A9A4-7850198F8EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA14F964-CF36-47E3-A9A4-7850198F8EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C89B357E-CC47-45A7-9423-8D216C01A32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C89B357E-CC47-45A7-9423-8D216C01A32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C89B357E-CC47-45A7-9423-8D216C01A32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C89B357E-CC47-45A7-9423-8D216C01A32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

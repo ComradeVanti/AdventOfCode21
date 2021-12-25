@@ -11,6 +11,7 @@
     <ItemGroup>
         <Compile Include="Operators.fs"/>
         <Compile Include="Math.fs"/>
+        <Compile Include="Binary.fs"/>
         <Compile Include="OptionBuilder.fs"/>
         <Compile Include="ResultBuilder.fs"/>
         <Compile Include="OptionUtil.fs"/>
